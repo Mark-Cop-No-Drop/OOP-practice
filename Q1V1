@@ -1,0 +1,10 @@
+def create_student(name, grade):
+    return {"name":name, "grade":grade}
+
+def display_student(student):
+    print("Hi I am ",student["name"], " I am in grade", student["grade"])
+
+student1 = create_student("James Acaster", 12)
+student2 = create_student("Fat Jack", 9)
+display_student(student1)
+display_student(student2)
