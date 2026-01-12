@@ -1,0 +1,21 @@
+class BankAccount:
+    def __init__(self, Bal):
+        self.Bal = Bal
+
+    def Deposit(self, amount):
+        self.Bal += amount
+        print(f"Deposited ${amount}. New Balance: ${self.Bal}")
+
+    def Withdraw(self, amount):
+        if amount <= self.Bal:
+            self.Bal -= amount
+            print(f"Withdrew ${amount}. New Balance: ${self.Bal}")
+        else:
+            print("Insufficient funds")
+
+# Create account
+account1 = BankAccount(4000)
+
+# Use methods
+account1.Deposit(500)
+account1.Withdraw(1200)
