@@ -1,0 +1,15 @@
+class Rectangle:
+    def __init__(self, Length, Width):
+        self.Length = Length
+        self.Width = Width
+
+    def area(self):
+        print(self.Length*self.Width)
+    def P(self):
+        print(self.Length*2 + self.Width*2)
+
+
+Rectangle1 = Rectangle(4, 9)
+
+Rectangle1.area()
+Rectangle1.P()
