@@ -1,0 +1,19 @@
+class school:
+    def __init__(self, ):
+        self.list = ["James", "Jack", "Jones", "Jameski"]
+
+    def add_student(self, name):
+        if name in self.list:
+            print("This student is already in the system")
+        else:
+            self.list.append(name)
+    def remove_student(self, name):
+        self.list.remove(name)
+
+    def ShowcaseList(self):
+        print("Here are the students :", self.list)
+
+school = school()
+school.add_student("Jones")
+school.remove_student("Jameski")
+school.ShowcaseList()
