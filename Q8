@@ -1,0 +1,27 @@
+class Product:
+    def __init__(self, name, price, ammount):
+        if(price<0):
+            raise ValueError("Price cannot be negative")
+        self.name = name
+        self.price = price
+        self.ammount = ammount
+
+    def sell(self, nmbr,):
+        print (self.ammount)
+        if (nmbr<self.ammount):
+            self.ammount -= nmbr
+            print (self.ammount)
+        else:
+            print("not enough stock")
+    def restock(self, nmbr):
+        print (self.ammount)
+        self.ammount += nmbr
+        print (self.ammount)
+
+    def Info(self):
+        print("Here is the info :", self.name, self.price, self.ammount)
+
+product = Product("Apples", 4, 10)
+product.sell(2)
+product.restock(4)
+product.Info()
